@@ -1,0 +1,187 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Cairo:wght@200..1000&family=Changa+One:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* custom.css */
+
+.alkalami-regular {
+  font-family: "Alkalami", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.cairo {
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
+
+:root {
+  /* You can also override the RGB variants if you use Bootstrap's opacity utilities */
+
+  --color2: rgb(126, 197, 255);
+  --bs-primary-rgb: 126, 197, 255; /* Blue */
+  --bs-secondary-rgb: 108, 117, 125; /* Gray */
+  --bs-success-rgb: 244, 145, 255; /* Purple/Pink */
+  --bs-danger-rgb: 255, 99, 132; /* Red */
+  --bs-warning-rgb: 255, 163, 163; /* Light Red/Pink */
+  --bs-info-rgb: 102, 217, 255; /* Cyan */
+  --bs-light-rgb: 248, 249, 250; /* Light */
+  --bs-dark-rgb: 33, 37, 41; /* Dark */
+}
+
+.btn-custom {
+  /* --- Typography & Layout --- */
+  --bs-btn-font-family: ; /* Inherits from your global font family */
+  --bs-btn-font-size: 1rem;
+  --bs-btn-font-weight: 400;
+  --bs-btn-line-height: 1.5;
+  --bs-btn-padding-x: 0.75rem;
+  --bs-btn-padding-y: 0.375rem;
+
+  /* --- Shape & Border --- */
+  --bs-btn-border-width: 1px;
+  --bs-btn-border-radius: 0.375rem;
+
+  /* --- Base Colors (Matches default btn-secondary) --- */
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #786c7d;
+  --bs-btn-border-color: #6c757d;
+
+  /* --- Hover State --- */
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #5c636a;
+  --bs-btn-hover-border-color: #565e64;
+
+  /* --- Active State (When Clicked) --- */
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #565e64;
+  --bs-btn-active-border-color: #51585e;
+
+  /* --- Focus State & Shadow Ring --- */
+  --bs-btn-focus-box-shadow: 0 0 0 0.25rem
+    rgba(var(--bs-btn-focus-shadow-rgb), 0.5);
+  --bs-btn-focus-shadow-rgb: 130, 138, 145; /* Gray glow */
+
+  /* --- Disabled State --- */
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #6c757d;
+  --bs-btn-disabled-border-color: #6c757d;
+}
+
+.card-custom {
+  /* --- Colors & Backgrounds --- */
+  --bs-card-color: ; /* Inherits default body text color */
+  --bs-card-bg: #ffffff; /* White background */
+  --bs-card-cap-color: ; /* Text color for Header/Footer (inherits) */
+  --bs-card-cap-bg: rgba(
+    0,
+    0,
+    0,
+    0.03
+  ); /* Subtle gray for Header/Footer background */
+
+  /* --- Borders & Separation --- */
+  --bs-card-border-width: 0px;
+  --bs-card-border-color: rgb(249, 0, 0); /* Light gray border */
+  --bs-card-border-radius: 1rem; /* Rounded corners */
+  --bs-card-inner-border-radius: calc(
+    1rem - 1px
+  ); /* Accounts for border thickness */
+
+  /* --- Spacing & Layout --- */
+  --bs-card-spacer-x: 1rem; /* Left/Right padding inside card-body */
+  --bs-card-spacer-y: 1rem; /* Top/Bottom padding inside card-body */
+  --bs-card-title-spacer-y: 0.5rem; /* Bottom margin for the card-title */
+
+  /* --- Shadows (Optional but available) --- */
+  --bs-card-box-shadow: ; /* Empty by default (flat) */
+}
+
+.modal-custom {
+  /* --- Structure & Widths --- */
+  --bs-modal-width: 500px; /* Default modal width (md) */
+  --bs-modal-margin: 0.5rem; /* Margin around modal on mobile */
+
+  /* --- Colors & Backgrounds --- */
+  --bs-modal-color: ; /* Inherits global body text color */
+  --bs-modal-bg: #fff; /* White content window background */
+  --bs-modal-border-color: rgba(
+    0,
+    0,
+    0,
+    0.175
+  ); /* Border around content window */
+  --bs-modal-border-width: 1px;
+  --bs-modal-border-radius: 0.5rem;
+
+  /* --- Header & Footer Specifics --- */
+  --bs-modal-header-border-color: #dee2e6; /* Line beneath header */
+  --bs-modal-header-border-width: 1px;
+  --bs-modal-header-padding: 1rem;
+  --bs-modal-footer-border-color: #dee2e6; /* Line above footer */
+  --bs-modal-footer-border-width: 1px;
+  --bs-modal-footer-padding: 0.75rem; /* Slightly tighter footer padding */
+
+  /* --- Content Padding --- */
+  --bs-modal-padding: 1rem; /* Default inner padding for body */
+
+  /* --- Box Shadow (Depth) --- */
+  --bs-modal-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); /* Small shadow on mobile */
+
+  /* --- The Dark Backdrop --- */
+  --bs-modal-backdrop-bg: #000; /* Black backdrop layer */
+  --bs-modal-backdrop-opacity: 0.5; /* 50% transparency */
+}
+
+.form-control-custom {
+  /* --- Base Colors & Text --- */
+  --bs-body-color: #212529; /* Default dark gray text */
+  --bs-body-bg: #fff; /* White input background */
+
+  /* --- Typography --- */
+  --bs-font-size: 1rem;
+  --bs-font-weight: 400;
+  --bs-line-height: 1.5;
+
+  /* --- Borders & Geometry --- */
+  --bs-border-width: 1px;
+  --bs-border-color: #dee2e6; /* Light gray border */
+  --bs-border-radius: 0.375rem; /* Standard rounded corners */
+  --bs-padding-x: 0.75rem;
+  --bs-padding-y: 0.375rem;
+
+  /* --- Focus State (When Clicked/Active) --- */
+  --bs-focus-border-color: #86b7fe; /* Light blue border on focus */
+  --bs-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25); /* Blue outer glow */
+
+  /* --- Disabled State --- */
+  --bs-disabled-bg: #e9ecef; /* Muted gray background */
+  --bs-disabled-border-color: ; /* Inherits base border color */
+
+  /* --- Placeholder Text Color --- */
+  /* Note: Bootstrap uses a utility variable for this */
+  --bs-secondary-color: rgba(33, 37, 41, 0.75);
+}
+
+aside {
+  width: 250px;
+  height: 100vh;
+  transition: 0.3s;
+}
+.hide {
+  width: 0px;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+}
+
+/* VariableSmall (form-control-sm)Large (form-control-lg)--bs-padding-y0.25rem0.5rem--bs-padding-x0.5rem1rem--bs-font-size0.875rem1.25rem--bs-border-radius0.25rem0.5rem */
