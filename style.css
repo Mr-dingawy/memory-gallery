@@ -2,6 +2,15 @@
 
 /* custom.css */
 
+* {
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        fill 0.3s ease,
+        stroke 0.3s ease;
+}
+
 .alkalami-regular {
   font-family: "Alkalami", serif;
   font-weight: 400;
@@ -18,12 +27,23 @@
 
 :root {
   /* my variable */
+  --bg-main: #ffffff;
   --bg-gray: #000000;
   --border-gold: #efc700;
   --bg-gold: #efc700;
 
+  /* ================button================= */
+  --bg-btn: #000000;
+  --btn-color: #ffffff;
+  --btn-border-color: #ffffff;
+  --btn-hover-color: #000000; /* text color */
+  --btn-hover-bg: #ffffff;
+  --btn-hover-border-color: #000000;
+  /* ================card================= */
+  --card-color: #000000;
+  --card-bg: #ffffff;
   /* bootstrap variable */
-  --color2: rgb(126, 197, 255);
+  --color2: rgb(0, 0, 0);
   --bs-primary-rgb: 126, 197, 255; /* Blue */
   --bs-secondary-rgb: 108, 117, 125; /* Gray */
   --bs-success-rgb: 244, 145, 255; /* Purple/Pink */
@@ -31,8 +51,29 @@
   --bs-warning-rgb: 255, 163, 163; /* Light Red/Pink */
   --bs-info-rgb: 102, 217, 255; /* Cyan */
   --bs-light-rgb: 248, 249, 250; /* Light */
-  --bs-dark-rgb: 33, 37, 41; /* Dark */
+  --bs-dark-rgb: 0, 0, 0; /* Dark */
   --bs-good-rgb: 33, 37, 41;
+}
+[data-bs-theme="dark"] {
+  --bg-main: #171717;
+  --bg-gray: #000000;
+  --border-gold: #efc700;
+  --bg-gold: #efc700;
+
+  /* ================button================= */
+
+  --bg-btn: #ffffff;
+  --btn-color: #000000;
+  --btn-border-color: #000000;
+  --btn-hover-color: #ffffff;
+  --btn-hover-bg: #000000;
+  --btn-hover-border-color: #ffffff;
+  /* ================card================= */
+  --card-color: #ffffff;
+  --card-bg: #000000;
+}
+
+body{
 }
 
 /* ================================utility========================== */
@@ -70,14 +111,14 @@
   --bs-btn-border-radius: 0.375rem;
 
   /* --- Base Colors (Matches default btn-secondary) --- */
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #000000;
-  --bs-btn-border-color: #6c757d;
+  --bs-btn-color: var(--btn-color);
+  --bs-btn-bg: var(--bg-btn);
+  --bs-btn-border-color: var(--btn-border-color);
 
   /* --- Hover State --- */
-  --bs-btn-hover-color: #000000;
-  --bs-btn-hover-bg: #ffffff;
-  --bs-btn-hover-border-color: var(--border-gold);
+  --bs-btn-hover-color: var(--btn-hover-color);
+  --bs-btn-hover-bg: var(--btn-hover-bg);
+  --bs-btn-hover-border-color: var(--btn-border-color);
 
   /* --- Active State (When Clicked) --- */
   --bs-btn-active-color: #fff;
@@ -97,8 +138,8 @@
 
 .card-custom {
   /* --- Colors & Backgrounds --- */
-  --bs-card-color: ; /* Inherits default body text color */
-  --bs-card-bg: #ffffff; /* White background */
+  --bs-card-color: var(--card-color); /* Inherits default body text color */
+  --bs-card-bg: var(--card-bg); /* White background */
   --bs-card-cap-color: ; /* Text color for Header/Footer (inherits) */
   --bs-card-cap-bg: rgba(
     0,
@@ -196,6 +237,10 @@ aside {
   transition: 0.3s;
   z-index: 2000;
 }
+main {
+  background-color: var(--bg-main);
+}
+
 .hide {
   width: 0px;
 }
@@ -204,15 +249,10 @@ aside {
   height: 200px;
   object-fit: cover;
   object-position: center;
-  
 }
 
-.hero-text{
+.hero-text {
   background-color: #0000003d;
 }
-
-
-
-
 
 /* VariableSmall (form-control-sm)Large (form-control-lg)--bs-padding-y0.25rem0.5rem--bs-padding-x0.5rem1rem--bs-font-size0.875rem1.25rem--bs-border-radius0.25rem0.5rem */
