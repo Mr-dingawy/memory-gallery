@@ -16,7 +16,7 @@
   </head>
   <body>
     <!-- ======================layout container==================== -->
-    <div class="container-fluid p-0 d-flex flex-column vh-100 overflow-hidden">
+    <div class="container-fluid p-0 d-flex flex-column  overflow-hidden" style="height: 100dvh;">
       <!-- ========================================== -->
 
       <nav
@@ -29,29 +29,84 @@
       </nav>
       <!-- ========================================== -->
 
-      <main class="bg-light flex-grow-1 overflow-auto">
-        <div class="container text-center">
-          <h1 class="display-1 fw-bold">This Is My Love</h1>
-          <i
-            class="bi bi-arrow-through-heart-fill display-1 text-danger"
-            role="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseExample"
-            aria-expanded="false"
-            aria-controls="collapseExample"
+      <main class="bg-light flex-grow-1 container-fluid overflow-auto">
+        <div class="row justify-content-center my-5">
+          <div
+            id="carouselExampleAutoplaying"
+            class="carousel slide col-xl-8"
+            data-bs-ride="carousel"
           >
-          </i>
-
-          <div class="collapse" id="collapseExample">
-            <div class="card card-body bg-dark text-light">
-              <h3 class="alkalami-regular">الي أميرتي</h3>
-              <p class="cairo">
-                حبيت الدنيا معاكي , ومفيش للدنيا طعم من غيرك , عاوز ابقا احسن حد
-                فالدنيا علشانك وعلشان انتي تستاهلي كل حاجه حلوه <br /><span
-                  >بحبك ❤</span
-                >
-              </p>
+            <div class="carousel-inner">
+              <div class="carousel-item position-relative active">
+                <img
+                  src="https://picsum.photos/1920/1080?1"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="position-absolute" style="bottom: 10%; left: 10%">
+                  <h1 class="text-light mb-3 display-1">
+                    welcome to the haveen
+                  </h1>
+                  <button class="btn btn-custom" style="width: 150px">
+                    View More
+                  </button>
+                </div>
+              </div>
+              <div class="carousel-item position-relative">
+                <img
+                  src="https://picsum.photos/1920/1080?2"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="position-absolute" style="bottom: 10%; left: 10%">
+                  <h1 class="text-light mb-3 display-1">
+                    welcome to the haveen
+                  </h1>
+                  <button class="btn btn-custom" style="width: 150px">
+                    View More
+                  </button>
+                </div>
+              </div>
+              <div class="carousel-item position-relative">
+                <img
+                  src="https://picsum.photos/1920/1080?3"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="position-absolute" style="bottom: 10%; left: 10%">
+                  <h1 class="text-light mb-3 display-1">
+                    welcome to the haveen
+                  </h1>
+                  <button class="btn btn-custom" style="width: 150px">
+                    View More
+                  </button>
+                </div>
+              </div>
             </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
         <!-- =================================== -->
@@ -60,7 +115,11 @@
             class="card-container col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2"
           >
             <div class="card shadow card-custom">
-              <img src="https://picsum.photos/300/200" class="card-img-top" alt="..." />
+              <img
+                src="https://picsum.photos/300/200"
+                class="card-img-top"
+                alt="..."
+              />
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">
@@ -77,7 +136,11 @@
             class="card-container col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2"
           >
             <div class="card shadow card-custom">
-              <img src="https://picsum.photos/300/200?2" class="card-img-top" alt="..." />
+              <img
+                src="https://picsum.photos/300/200?2"
+                class="card-img-top"
+                alt="..."
+              />
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">
@@ -93,7 +156,11 @@
             class="card-container col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2"
           >
             <div class="card shadow card-custom">
-              <img src="https://picsum.photos/300/200?3" class="card-img-top" alt="..." />
+              <img
+                src="https://picsum.photos/300/200?3"
+                class="card-img-top"
+                alt="..."
+              />
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">
@@ -109,7 +176,11 @@
             class="card-container col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2"
           >
             <div class="card shadow card-custom">
-              <img src="https://picsum.photos/300/200?4" class="card-img-top" alt="..." />
+              <img
+                src="https://picsum.photos/300/200?4"
+                class="card-img-top"
+                alt="..."
+              />
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">
@@ -125,7 +196,11 @@
             class="card-container col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2"
           >
             <div class="card shadow card-custom">
-              <img src="https://picsum.photos/300/200?5" class="card-img-top" alt="..." />
+              <img
+                src="https://picsum.photos/300/200?5"
+                class="card-img-top"
+                alt="..."
+              />
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">
@@ -141,7 +216,11 @@
             class="card-container col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2"
           >
             <div class="card shadow card-custom">
-              <img src="https://picsum.photos/300/200?6" class="card-img-top" alt="..." />
+              <img
+                src="https://picsum.photos/300/200?6"
+                class="card-img-top"
+                alt="..."
+              />
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">
@@ -156,18 +235,18 @@
       </main>
       <!-- ========================================== -->
 
-      <footer class="bg-gold flex-shrink-0" style="height: 30px">
-        footer
-      </footer>
+      <footer class="bg-gold flex-shrink-0" style="height: 30px">footer</footer>
     </div>
 
     <!-- ========================================== -->
     <aside
-      class="bg-gray position-fixed top-0 overflow-y-auto hide d-flex flex-column "
+      class="bg-gray position-fixed top-0 overflow-y-auto hide d-flex flex-column z-100"
       id="side"
     >
       <div class="container">
-        <div class="text-end fs-2 text-light p-3"><i class="bi bi-x-lg cursor-hover" id="side-btn-close"></i></div>
+        <div class="text-end fs-2 text-light p-3">
+          <i class="bi bi-x-lg cursor-hover" id="side-btn-close"></i>
+        </div>
       </div>
     </aside>
 

@@ -1,6 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Cairo:wght@200..1000&family=Changa+One:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Alkalami&family=Cairo:wght@200..1000&family=Changa+One:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* custom.css */
 
@@ -10,24 +8,21 @@
   font-style: normal;
 }
 
-
 .cairo {
   font-family: "Cairo", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  font-variation-settings:
-    "slnt" 0;
+  font-variation-settings: "slnt" 0;
 }
-
 
 :root {
   /* my variable */
-  --bg-gray:#000000;
-  --border-gold:#efc700;
-  --bg-gold:#efc700;
-  
-/* bootstrap variable */
+  --bg-gray: #000000;
+  --border-gold: #efc700;
+  --bg-gold: #efc700;
+
+  /* bootstrap variable */
   --color2: rgb(126, 197, 255);
   --bs-primary-rgb: 126, 197, 255; /* Blue */
   --bs-secondary-rgb: 108, 117, 125; /* Gray */
@@ -40,28 +35,24 @@
   --bs-good-rgb: 33, 37, 41;
 }
 
-
 /* ================================utility========================== */
 
-.bg-gray{
+.bg-gray {
   background-color: var(--bg-gray);
 }
 
-.bg-gold{
+.bg-gold {
   background-color: var(--bg-gold);
 }
 
-
 /* add more with transform effect or edit this  */
-.cursor-hover{
+.cursor-hover {
   cursor: pointer;
-
 }
 
-.border-gold-bottom{
-  border-bottom: 5px solid var(--border-gold)
+.border-gold-bottom {
+  border-bottom: 5px solid var(--border-gold);
 }
-
 
 /* ================================custom bootstrap========================== */
 
@@ -75,7 +66,7 @@
   --bs-btn-padding-y: 0.375rem;
 
   /* --- Shape & Border --- */
-  --bs-btn-border-width: 3px;
+  --bs-btn-border-width: 1px;
   --bs-btn-border-radius: 0.375rem;
 
   /* --- Base Colors (Matches default btn-secondary) --- */
@@ -203,6 +194,7 @@ aside {
   width: 250px;
   height: 100vh;
   transition: 0.3s;
+  z-index: 2000;
 }
 .hide {
   width: 0px;
@@ -212,6 +204,15 @@ aside {
   height: 200px;
   object-fit: cover;
   object-position: center;
+  
 }
+
+.hero-text{
+  background-color: #0000003d;
+}
+
+
+
+
 
 /* VariableSmall (form-control-sm)Large (form-control-lg)--bs-padding-y0.25rem0.5rem--bs-padding-x0.5rem1rem--bs-font-size0.875rem1.25rem--bs-border-radius0.25rem0.5rem */
