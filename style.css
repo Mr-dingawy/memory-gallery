@@ -3,12 +3,12 @@
 /* custom.css */
 
 * {
-    transition:
-        background-color 0.3s ease,
-        color 0.3s ease,
-        border-color 0.3s ease,
-        fill 0.3s ease,
-        stroke 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    fill 0.3s ease,
+    stroke 0.3s ease;
 }
 
 .alkalami-regular {
@@ -41,7 +41,7 @@
   --btn-hover-border-color: #000000;
   /* ================card================= */
   --card-color: #000000;
-  --card-bg: #ffffff;
+  --card-bg: #bbd7ff;
   /* bootstrap variable */
   --color2: rgb(0, 0, 0);
   --bs-primary-rgb: 126, 197, 255; /* Blue */
@@ -70,10 +70,10 @@
   --btn-hover-border-color: #ffffff;
   /* ================card================= */
   --card-color: #ffffff;
-  --card-bg: #000000;
+  --card-bg: #003863;
 }
 
-body{
+body {
 }
 
 /* ================================utility========================== */
